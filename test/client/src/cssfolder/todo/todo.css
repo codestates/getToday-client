@@ -1,0 +1,8 @@
+.Todo{
+    box-sizing: content-box;
+    border: 2px solid #bbb;
+}
+.todoscollection{
+    box-sizing: border-box; 
+
+}
