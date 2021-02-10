@@ -1,8 +1,9 @@
 import React from "react";
-import { Switch, Route, withRouter } from "react-router-dom";
+import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Mypage from "./pages/Mypage";
 import axios from "axios";
 import './App.css';
 
@@ -44,7 +45,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { isLogin } = this.state;
+    const { isLogin, userinfo } = this.state;
 
     return (
       <div>
@@ -56,6 +57,20 @@ class App extends React.Component {
             )}
           />
           <Route exact path='/signup' render={() => <Signup isLogin={isLogin} />} />
+          <Route
+            exact
+            path='/mypage'
+            render={() => <Mypage userinfo={userinfo} handleLogout={this.handleLogout.bind(this)} />}
+          />
+          <Route
+            path='/'
+            render={() => {
+              if (isLogin) {
+                return <Redirect to='/mypage' />;
+              }
+              return <Redirect to='/login' />;
+            }}
+          />
         </Switch>
       </div>
     );
