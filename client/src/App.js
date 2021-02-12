@@ -4,6 +4,7 @@ import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Mypage from "./pages/Mypage";
+import StudySchedule from "./pages/StudySchedule";
 import axios from "axios";
 import './App.css';
 
@@ -44,6 +45,14 @@ class App extends React.Component {
       })
   }
 
+  handleschedule() {
+    axios.post("https://localhost:4000/studyschedule")
+      .then((res) => {
+        this.setState({ userinfo: res.data, isLogin: true });
+        this.props.history.push('/studyschedule');
+      })
+  }
+
   render() {
     const { isLogin, userinfo } = this.state;
 
@@ -61,6 +70,11 @@ class App extends React.Component {
             exact
             path='/mypage'
             render={() => <Mypage userinfo={userinfo} handleLogout={this.handleLogout.bind(this)} />}
+          />
+          <Route
+            exact
+            path='/studyschedule'
+            render={() => <StudySchedule userinfo={userinfo} handleschedule={this.handleschedule.bind(this)} />}
           />
           <Route
             path='/'
