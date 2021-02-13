@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
 class AddTodo extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
         this.state = {
-            content : ''
+            content: ''
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -19,16 +19,16 @@ class AddTodo extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.addTodo(this.state);
-        this.setState({content : ''})
+        this.setState({ content: '' })
     }
 
-    render () {
+    render() {
         return (
-            <div>
+            <div className='inputForm'>
                 <form onSubmit={this.handleSubmit}>
                     <label>Add new todo:</label>
-                    <input type="text" 
-                        onChange={this.handleChange} 
+                    <input className='input' type="text"
+                        onChange={this.handleChange}
                         value={this.state.content}
                     />
                 </form>

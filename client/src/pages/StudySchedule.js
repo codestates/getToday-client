@@ -15,7 +15,8 @@ class StudySchedule extends Component {
         <StudyTimeline />
         <Todo />
         <AxiosTest />
-        <div><Link to='/mypage'><button>내정보보기</button></Link></div>
+        <br></br>
+        <div><Link to='/mypage'><button className='btn'>MY PAGE</button></Link></div>
       </div>
 
     );
