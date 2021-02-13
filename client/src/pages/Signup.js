@@ -21,11 +21,6 @@ class Signup extends React.Component {
     };
 
     handleSignup = () => {
-        // TODO : 서버에 회원가입 요청 후 로그인 페이지로 이동 하세요.
-        //        로그인 페이지로 이동시, 다음 코드를 이용하세요.
-        //        this.props.history.push("/");
-        //
-        // TODO : 모든 항목을 입력하지 않았을 경우 에러를 표시해야 합니다.
         const { email, password, mobile, username } = this.state;
         if (!email || !password || !mobile || !username) {
             this.setState({
@@ -40,16 +35,18 @@ class Signup extends React.Component {
         }
 
         axios
-            .post("https://localhost:4000/signup", {
+            .post("https://localhost:4000/users/signup", {
                 email: email,
                 password: password,
-                username: username,
+                userName: username,
                 mobile: mobile,
-            })
+            }, 
+            { headers: { "Content-Type": "application/json" }, withCredentials: true })
             .then((res) => {
+                alert("회원가입이 완료 되었습니다!");
                 this.props.history.push("/");
             })
-            .catch((err) => console.log(err));
+            .catch((err) => alert("이미 가입된 회원입니다."));
     }
 
     render() {
