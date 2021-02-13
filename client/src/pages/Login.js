@@ -16,11 +16,12 @@ class Login extends React.Component {
         };
         this.handleInputValue = this.handleInputValue.bind(this);
     }
+
     handleInputValue = (key) => (e) => {
         this.setState({ [key]: e.target.value });
     };
+
     handleLogin = () => {
-        const { handleResponseSuccess } = this.props;
         const { email, password } = this.state;
 
         if (!email || !password) {
@@ -36,11 +37,16 @@ class Login extends React.Component {
         }
 
         return axios
-            .post("https://localhost:4000/signin", {
+            .post("https://localhost:4000/users/login", {
                 email: email,
                 password: password,
+            }, { headers: { "Content-Type": "application/json" }, withCredentials: true })
+            .then(res => {
+                console.log(res.data);
+                this.props.loginHandler(res.data.data)
+                this.props.setUserInfo(res.data.data.userInfo)
+                this.props.history.push('/');
             })
-            .then(handleResponseSuccess)
             .catch((err) => {
                 alert("Login failed");
                 console.log(err);
