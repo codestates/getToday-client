@@ -5,7 +5,7 @@
 # 📸 getToday
 
 
-✅ [이미지를 통해 여러분의 서비스를 소개해주세요](https://worthpreading.tistory.com/83)
+
 
 오늘도 성공적인 하루를 위한 일정 관리 파트너!
 
