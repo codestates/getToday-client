@@ -43,10 +43,8 @@
 ![camera_list_flow](https://user-images.githubusercontent.com/58412533/89811239-53b33280-db79-11ea-859f-555b11ba8f85.gif)
 
 ### Server-Side flow chart[DYNAMIC]
-![ezgif com-resize (1)](https://user-images.githubusercontent.com/48914716/89760007-56d10300-db26-11ea-922a-91d1eb72a4ad.gif)
+![](https://user-images.githubusercontent.com/70881850/106555160-5a3ac980-6560-11eb-9d55-15580a6165a4.jpg)
 
-### Server-Side Photo upload flow chart[DYNAMIC]
-![back_camera](https://user-images.githubusercontent.com/58412533/89811987-6843fa80-db7a-11ea-9233-62b9a1169bfd.gif)
 
 # 🗣 우리를 소개합니다.
 
