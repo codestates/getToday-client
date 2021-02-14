@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const https = require('https');
+// const https = require('https');
 
 class AxiosTest extends Component {
   constructor(props) {
@@ -13,14 +13,14 @@ class AxiosTest extends Component {
   }
   getMessage () {
     axios
-      .post("https://jsonplaceholder.typicode.com/posts",
+      .post("https://localhost:4000/schedules/getSchedules",
       {
         userEmail: '1234@1.1'
       },
         { headers: { "Content-Type": "application/json" }, withCredentials: true }
       )
       .then((res)=>{
-        console.log('test')
+        console.log(res);
         // console.log(res.data.slice(0,10))
         // this.setState({posts : res.data.slice(0,10)})
 //        this.setState({message : res.data})

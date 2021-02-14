@@ -2,14 +2,13 @@ import React from 'react';
 import axios from 'axios';
 /********** todo test field **********/
 function axiosCall (inputData) {
-    inputData.forEach(el => {
         axios
       .post("https://localhost:4000/schedules/addSchedule",
       {          
-      title: el.title,
-      startTime: el.startTime,
-      endTime: el.endTime,
-      date: el.date, 
+      title: inputData[inputData.length - 1].title,
+      startTime: inputData[inputData.length - 1].startTime,
+      endTime: inputData[inputData.length - 1].endTime,
+      date: inputData[inputData.length - 1].date, 
       userEmail: '1234@1.1'
       },
       {
@@ -19,7 +18,7 @@ function axiosCall (inputData) {
         console.log(inputData);
         console.log(res);
     })
-    });
+    ;
     
 }
 
