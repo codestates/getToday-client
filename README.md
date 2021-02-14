@@ -36,12 +36,6 @@
 
 # 🔨 Architecture
 
-### Client-Side Storyboard flow chart[DYNAMIC]
-![ezgif com-resize](https://user-images.githubusercontent.com/48914716/89759821-fcd03d80-db25-11ea-9ae0-4551a06b0607.gif)
-
-### Client-Side Camera, FriendList flow chart[DYNAMIC]
-![camera_list_flow](https://user-images.githubusercontent.com/58412533/89811239-53b33280-db79-11ea-859f-555b11ba8f85.gif)
-
 ### Server-Side flow chart[DYNAMIC]
 ![](https://user-images.githubusercontent.com/70881850/106555160-5a3ac980-6560-11eb-9d55-15580a6165a4.jpg)
 
