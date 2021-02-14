@@ -61,7 +61,7 @@
     </tr>
      <tr>
       <td align="center">
-        <a href="https://github.com/sokim1616">
+        <a href="https://github.com/Aiden76005588">
           <sub>
             <b>이현규</b>
           </sub>
@@ -73,7 +73,7 @@
       </td>
     </tr>
       <td align="center">
-        <a href="https://github.com/bombamong">
+        <a href="https://github.com/faust7605">
           <sub>
             <b>신예담</b>
           </sub>
@@ -86,7 +86,7 @@
     </tr>
     <tr>
       <td align="center">
-        <a href="https://github.com/Kyung-Douhyun">
+        <a href="https://github.com/yoonkm24">
           <sub>
             <b>윤경민</b>
           </sub>
