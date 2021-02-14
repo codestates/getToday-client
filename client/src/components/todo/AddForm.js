@@ -4,7 +4,7 @@ class AddTodo extends Component {
     constructor(props){
         super(props)
         this.state = {
-            title : '',
+            subject : '',
             startTime : '',
             endTime : '',
             date : ''
