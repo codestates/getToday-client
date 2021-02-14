@@ -32,7 +32,6 @@ function Todos ({todos, deleteTodo}) {
         <div>todo is empty</div>
     );
 
-
     return (
         <div className = 'todoscollection'>
             {todoList}
