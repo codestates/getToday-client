@@ -48,7 +48,7 @@
   <tbody>
     <tr>
       <td align="center">
-        <a href="https://github.com/codeFabian">
+        <a href="https://github.com/10o0o">
           <sub>
             <b>최재선</b>
           </sub>
