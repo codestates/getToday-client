@@ -10,8 +10,9 @@ import "../cssfolder/todo/todo.css"
 
 class StudySchedule extends Component {
   render() {
+    const back = { backgroundColor: 'white' }
     return (
-      <div className="StudySchedule">
+      <div className="StudySchedule" style={back}>
         <StudyTimeline />
         <Todo />
         <AxiosTest />
