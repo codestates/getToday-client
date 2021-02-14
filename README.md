@@ -29,7 +29,7 @@
 
 ![](https://img.shields.io/badge/BACK-Express-092E20?style=for-the-badge)
 
-![](https://img.shields.io/badge/BACK-Firebase-FFCA28?style=for-the-badge&logo=Firebase)
+![](https://img.shields.io/badge/BACK-MySQL-FFCA28?style=for-the-badge&logo=MySQL)
 
 
 <img width="1781" alt="TechStack" src="https://user-images.githubusercontent.com/48914716/89753542-b1149880-db13-11ea-9f00-d129920afd26.png">
@@ -50,7 +50,7 @@
 
 # 🗣 우리를 소개합니다.
 
-✅ [테이블 형식을 통해 깔끔하게 정리해보세요!](https://www.markdownguide.org/cheat-sheet/)
+
 
 <table>
   <tbody>
@@ -83,7 +83,7 @@
       <td align="center">
         <a href="https://github.com/bombamong">
           <sub>
-            <b>변민우</b>
+            <b>신예담</b>
           </sub>
         </a>
         <br>
@@ -96,7 +96,7 @@
       <td align="center">
         <a href="https://github.com/Kyung-Douhyun">
           <sub>
-            <b>경두현</b>
+            <b>윤경민</b>
           </sub>
         </a>
         <br>
