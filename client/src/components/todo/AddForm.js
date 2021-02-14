@@ -36,7 +36,7 @@ class AddTodo extends Component {
     }
     todoBtn = () => {
         this.props.addTodo(this.state);
-        this.setState({subject : ''});
+        this.setState({title : ''});
         this.setState({startTime : ''});
         this.setState({endTime : ''});
         this.setState({date : ''});

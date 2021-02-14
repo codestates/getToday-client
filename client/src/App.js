@@ -81,7 +81,7 @@ class App extends React.Component {
           <Route
             exact
             path='/studyschedule'
-            render={() => <StudySchedule userInfo={userInfo} />}
+            render={() => <StudySchedule userInfo={userInfo}/>}
           />
           <Route
             path='/'
