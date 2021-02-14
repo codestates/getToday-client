@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-
 class AddTodo extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
         this.state = {
             title : '',
@@ -10,36 +9,31 @@ class AddTodo extends Component {
             date : ''
         }
         this.todoBtn = this.todoBtn.bind(this);
-        this.subjectAdder = this.subjectAdder.bind(this);
+        this.titleAdder = this.titleAdder.bind(this);
         this.startTimeAdder = this.startTimeAdder.bind(this);
         this.endTimeAdder = this.endTimeAdder.bind(this);
         this.dateAdder = this.dateAdder.bind(this);
     }
-
-    subjectAdder = (e) => {
+    titleAdder = (e) => {
         this.setState({
-            subject: e.target.value,
+            title: e.target.value,
          })
     }
-
     startTimeAdder = (e) => {
         this.setState({
             startTime : e.target.value
         })
     }
-
     endTimeAdder = (e) => {
         this.setState({
             endTime : e.target.value
         })
     }
-
     dateAdder = (e) => {
         this.setState({
             date : e.target.value
         })
     }
-
     todoBtn = () => {
         this.props.addTodo(this.state);
         this.setState({subject : ''});
@@ -47,13 +41,12 @@ class AddTodo extends Component {
         this.setState({endTime : ''});
         this.setState({date : ''});
     }
-
     render () {
         return (
             <div>
                 <label>Add new todo : </label>
                 <input type="text" 
-                    onChange={this.subjectAdder} 
+                    onChange={this.titleAdder} 
                     value={this.state.subject}
                 />
                 <br></br>
@@ -79,5 +72,4 @@ class AddTodo extends Component {
         )
     }
 }
-
 export default AddTodo

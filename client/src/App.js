@@ -23,22 +23,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.isAuthenticated();
-  }
-
-  isAuthenticated() {
-    // axios.get("https://localhost:4000/user")
-    //   .then((res) => {
-    //     console.log(res.data);
-    //     this.setState({ userinfo: res.data, isLogin: true });
-    //     this.props.history.push('/');
-    //   })
-    //   .catch((err) => {
-    //     if (err.response.status === 401) {
-    //       this.setState({ isLogin: false })
-    //       this.props.history.push('/login');
-    //     }
-    //   })
+    // this.isAuthenticated();
   }
 
   setUserInfo(userInfo) {
@@ -67,13 +52,13 @@ class App extends React.Component {
       })
   }
 
-  handleschedule() {
-    axios.post("https://localhost:4000/studyschedule")
-      .then((res) => {
-        this.setState({ userinfo: res.data, isLogin: true });
-        this.props.history.push('/studyschedule');
-      })
-  }
+  // handleschedule() {
+  //   axios.post("https://localhost:4000/studyschedule")
+  //     .then((res) => {
+  //       this.setState({ userinfo: res.data, isLogin: true });
+  //       this.props.history.push('/studyschedule');
+  //     })
+  // }
 
   render() {
     const { isLogin, userInfo } = this.state;
@@ -96,7 +81,7 @@ class App extends React.Component {
           <Route
             exact
             path='/studyschedule'
-            render={() => <StudySchedule userInfo={userInfo} handleschedule={this.handleschedule.bind(this)} />}
+            render={() => <StudySchedule userInfo={userInfo} />}
           />
           <Route
             path='/'
