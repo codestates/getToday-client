@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 class AddTodo extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
         this.state = {
             title : '',

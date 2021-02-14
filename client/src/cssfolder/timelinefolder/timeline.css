@@ -1,6 +1,6 @@
 
 .StudySchedule {
-    width : 70%
+    width : 100%
 }
 .react-calendar-timeline * {
     box-sizing: border-box; 
@@ -8,7 +8,7 @@
   
 
 .react-calendar-timeline .rct-header-root {
-    background:cornflowerblue;
+    background:rgb(211, 142, 230);
     border-bottom: 1px solid #bbb;
     
 }
