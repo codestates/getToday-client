@@ -26,21 +26,6 @@ class App extends React.Component {
     this.isAuthenticated();
   }
 
-  isAuthenticated() {
-    // axios.get("https://localhost:4000/user")
-    //   .then((res) => {
-    //     console.log(res.data);
-    //     this.setState({ userinfo: res.data, isLogin: true });
-    //     this.props.history.push('/');
-    //   })
-    //   .catch((err) => {
-    //     if (err.response.status === 401) {
-    //       this.setState({ isLogin: false })
-    //       this.props.history.push('/login');
-    //     }
-    //   })
-  }
-
   setUserInfo(userInfo) {
     this.setState({ userInfo : {
       userEmail : userInfo.userEmail,
